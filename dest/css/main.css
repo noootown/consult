@@ -1938,7 +1938,8 @@ div.nctu {
 }
 
 #section-location #map {
-  width: 80%;
+  background: rgba(0, 0, 0, 0.5) url("../images/location.png") 5%;
+  width: 90%;
   height: calc(100% - 100px);
   margin: 40px auto;
 }

@@ -422,25 +422,6 @@ html(lang="zh-tw")
     script(src="./js/main.js")
     script(src="./js/reveal.js")
     script.
-        function initMap() {
-            var myLatLng = {lat: 24.7865211, lng: 121.0000325};
-            
-            // Create a map object and specify the DOM element for display.
-            var map = new google.maps.Map(document.getElementById('map'), {
-                center: myLatLng,
-                scrollwheel: false,
-                zoom: 17
-            })
-            
-            // Create a marker and set its position.
-            var marker = new google.maps.Marker({
-                position: myLatLng,
-                title: 'Here'
-            });
-            //setTimeout(function(){
-                marker.setMap(map);
-            //},10000)
-        }
         Reveal.initialize({
             controls: true,
             progress: true,
@@ -537,8 +518,6 @@ html(lang="zh-tw")
             activeDOM[x].dom.forEach(function(element){
                 $(activeDOM[x].name +' '+element).addClass('active');
             });
-            if(activeDOM[x].name==='#section-location')
-                initMap();
         });
         $('.choose-grade-block.block-hat').on('click',function(){
             $('.wrapper.choose').removeClass('active');

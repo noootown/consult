@@ -1,11 +1,8 @@
 *.log
-
 node_modules
-
 *.swp
-
 server.js
-
 .DS*
-
 ._.DS*
+.Rhistory
+.sass-cache

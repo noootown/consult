@@ -6,26 +6,7 @@
 與
 <a href="https://www.facebook.com/counseingcenter/" target="_blank">Facebook粉絲團 (點我) </a>
 。</h5></li><li><h5>索取諮商中心編製的心理資訊及DM。  </h5></li><li><h5>借閱諮商中心相關心理書籍。</h5></li><li><h5>進行各式各樣的
-<a href="http://counsel.sa.nctu.edu.tw/?page_id=585" target="_blank">心理測驗 (點我) </a></h5></li></ol></div></div></section><section id="section-location" data-background="./images/sunshine-girl.png"><div class="wrapper white"><h1 class="title">對了，我們在活動中心三樓</h1><div id="map"></div></div></section><section id="section-end" data-background="./images/cloud.png"><div class="wrapper"><div class="block"><h1> <span>諮</span><span>商</span><span>中</span><span>心</span><span>關</span><span>心</span><span>你</span></h1><h1><span class="first">讓我們成為你在</span><span class="second">交大學習與生活的</span><span class="third">支持力量</span></h1></div></div></section></div></div></body><script src="./js/jquery-2.1.4.min.js"></script><script src="./js/main.js"></script><script src="./js/reveal.js"></script><script>function initMap() {
-    var myLatLng = {lat: 24.7865211, lng: 121.0000325};
-    
-    // Create a map object and specify the DOM element for display.
-    var map = new google.maps.Map(document.getElementById('map'), {
-        center: myLatLng,
-        scrollwheel: false,
-        zoom: 17
-    })
-    
-    // Create a marker and set its position.
-    var marker = new google.maps.Marker({
-        position: myLatLng,
-        title: 'Here'
-    });
-    //setTimeout(function(){
-        marker.setMap(map);
-    //},10000)
-}
-Reveal.initialize({
+<a href="http://counsel.sa.nctu.edu.tw/?page_id=585" target="_blank">心理測驗 (點我) </a></h5></li></ol></div></div></section><section id="section-location" data-background="./images/sunshine-girl.png"><div class="wrapper white"><h1 class="title">對了，我們在活動中心三樓</h1><div id="map"></div></div></section><section id="section-end" data-background="./images/cloud.png"><div class="wrapper"><div class="block"><h1> <span>諮</span><span>商</span><span>中</span><span>心</span><span>關</span><span>心</span><span>你</span></h1><h1><span class="first">讓我們成為你在</span><span class="second">交大學習與生活的</span><span class="third">支持力量</span></h1></div></div></section></div></div></body><script src="./js/jquery-2.1.4.min.js"></script><script src="./js/main.js"></script><script src="./js/reveal.js"></script><script>Reveal.initialize({
     controls: true,
     progress: true,
     history: true,
@@ -121,8 +102,6 @@ Reveal.addEventListener('slidechanged', function(event){
     activeDOM[x].dom.forEach(function(element){
         $(activeDOM[x].name +' '+element).addClass('active');
     });
-    if(activeDOM[x].name==='#section-location')
-        initMap();
 });
 $('.choose-grade-block.block-hat').on('click',function(){
     $('.wrapper.choose').removeClass('active');
